@@ -19,6 +19,13 @@ they played different roles.
 
 JavaScript implements arithmetic traits from it's beginning[^2].
 
+As in many other programming languages, in JavaScript arithmetic operations can
+be applied only to a particular set of values, — widely known as numbers. Values
+of other types required to be converted first to a number, to be able to perform
+arithmetic operations with 'em. Though, in some cases JavaScript hiddenly make
+such type conversion by itself while evaluation math expression, or at least try
+to do it correctly.
+
 [^1]: Some operations are non binary, but unary.
 
 [^2]: First edition of [ECMA-262](https://www.ecma-international.org/wp-content/uploads/ECMA-262_1st_edition_june_1997.pdf) (1997) suggests most of the arithmetic operations.
