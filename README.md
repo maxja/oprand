@@ -33,6 +33,16 @@ with a code that have greater level of expressiveness, and describe arithmetic
 operation not only on numbers but [geometry shapes](https://en.wikipedia.org/wiki/Geometric_algebra), [vectors](https://en.wikipedia.org/wiki/Vector_calculus), [matrices](https://en.wikipedia.org/wiki/Matrix_(mathematics)) or just to calculate an
 amounts presented in a different currencies.
 
+```typescript
+Circle({ x: 0, y: 0, r: 5 }) + Rectangle({ x: 2, y: 1, w: 7, h: 2 })
+
+Vec(2, -5) + Vec(2, 1)
+
+USD(1_000) - EUR(500) + BTC(0.000001)
+
+Matrix([1, 9, -13], [20, 5, -6]) * Matrix([3, -2, 8])
+```
+
 And JavaScript gives us a hand on that. Each object can define `valueOf` method
 which will be invoked before arithmetic operation, but here is a catch,
 the result of invocation should be a number.
